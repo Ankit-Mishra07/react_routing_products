@@ -29,6 +29,7 @@ padding: 10px;
 font-size: 20px;
 border: 3px solid #1A374D;
 color: #406882;
+text-decoration: none;
 font-weight: 600;
 `
 
@@ -54,10 +55,11 @@ const link =
 const Navbar = () => {
     return (
         <Nav>
-
+            <Link to="/" style={link}>
             <Div1>
                 <Logo>BRAND</Logo>
             </Div1>
+            </Link>
             <Div2>
                 <Link style={link}  to="/">HOME</Link>
                 <Link style={link} to="products">PRODUCTS</Link>
